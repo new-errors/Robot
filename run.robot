@@ -33,5 +33,6 @@ Login FlowAccount.com
 Duplicate Quotations
     เข้าสู่หน้าใบเสนอราคา
     สร้างเอกสารซ้ำ 
+    ตรวจสอบเอกสารสร้างซ้ำ
     
 
