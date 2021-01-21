@@ -6,6 +6,7 @@ Library     String
 
 Resource    TestCase/TestCase_Login.robot
 Resource    TestCase/TestCase_create_qt.robot
+Resource    TestCase/TestCase_duplicate_qt.robot
 
 *** Variables ***
 
@@ -20,16 +21,17 @@ Login FlowAccount.com
     เข้าใช้งาน FlowAccount
     เข้าใช้งาน FlowAccount สำเร็จ
 
-Create Quotations
-    เข้าสู่หน้าใบเสนอราคา
-    สร้างใบเสนอราคา
-    เลือกรายชื่อผู้ติดต่อ
-    เพิ่มรายการสินค้า
-    เลือกรายการสินค้า
-    ตรวจสอบยอดรวมเอกสาร
-    บันทึกเอกสาร
+# Create Quotations
+#     เข้าสู่หน้าใบเสนอราคา
+#     สร้างใบเสนอราคา
+#     เลือกรายชื่อผู้ติดต่อ
+#     เพิ่มรายการสินค้า
+#     เลือกรายการสินค้า
+#     ตรวจสอบยอดรวมเอกสาร
+#     บันทึกเอกสาร
 
-# Duplicate Quotations
-#     Log                 Serial ${document_serial}
+Duplicate Quotations
+    เข้าสู่หน้าใบเสนอราคา
+    สร้างเอกสารซ้ำ 
     
 
