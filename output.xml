@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20210121 16:55:21.614" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20210121 18:29:28.111" rpa="false">
 <suite id="s1" name="Run" source="C:\Users\findb\OneDrive\Desktop\GitHub\Robotframework\Robot\run.robot">
 <test id="s1-t1" name="Login FlowAccount.com">
 <kw name="เปิดเว็บ flowaccount.com" library="TestCase_Login">
@@ -9,14 +9,14 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210121 16:55:21.756" level="INFO">Opening browser 'chrome' to base url 'https://flowaccount.com'.</msg>
-<status status="PASS" starttime="20210121 16:55:21.756" endtime="20210121 16:55:26.186"></status>
+<msg timestamp="20210121 18:29:28.250" level="INFO">Opening browser 'chrome' to base url 'https://flowaccount.com'.</msg>
+<status status="PASS" starttime="20210121 18:29:28.250" endtime="20210121 18:29:32.583"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210121 16:55:26.186" endtime="20210121 16:55:28.366"></status>
+<status status="PASS" starttime="20210121 18:29:32.583" endtime="20210121 18:29:34.728"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:21.756" endtime="20210121 16:55:28.366"></status>
+<status status="PASS" starttime="20210121 18:29:28.250" endtime="20210121 18:29:34.728"></status>
 </kw>
 <kw name="เข้าหน้า Auth Login FlowAccount" library="TestCase_Login">
 <kw name="Click Element" library="Selenium2Library">
@@ -24,10 +24,10 @@
 <arguments>
 <arg>class:app-border-btn</arg>
 </arguments>
-<msg timestamp="20210121 16:55:28.369" level="INFO">Clicking element 'class:app-border-btn'.</msg>
-<status status="PASS" starttime="20210121 16:55:28.367" endtime="20210121 16:55:30.957"></status>
+<msg timestamp="20210121 18:29:34.731" level="INFO">Clicking element 'class:app-border-btn'.</msg>
+<status status="PASS" starttime="20210121 18:29:34.731" endtime="20210121 18:29:36.537"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:28.367" endtime="20210121 16:55:30.957"></status>
+<status status="PASS" starttime="20210121 18:29:34.730" endtime="20210121 18:29:36.537"></status>
 </kw>
 <kw name="เข้าใช้งาน FlowAccount" library="TestCase_Login">
 <kw name="Input Text" library="Selenium2Library">
@@ -36,8 +36,8 @@
 <arg>id:Email</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20210121 16:55:30.960" level="INFO">Typing text 'goodnight@flowaccount.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20210121 16:55:30.959" endtime="20210121 16:55:31.053"></status>
+<msg timestamp="20210121 18:29:36.538" level="INFO">Typing text 'goodnight@flowaccount.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20210121 18:29:36.538" endtime="20210121 18:29:36.634"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -45,18 +45,18 @@
 <arg>id:Password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20210121 16:55:31.054" level="INFO">Typing text '1q1q1q1q@' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20210121 16:55:31.053" endtime="20210121 16:55:31.152"></status>
+<msg timestamp="20210121 18:29:36.635" level="INFO">Typing text '1q1q1q1q@' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20210121 18:29:36.634" endtime="20210121 18:29:36.726"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>class:login-lbl</arg>
 </arguments>
-<msg timestamp="20210121 16:55:31.153" level="INFO">Clicking element 'class:login-lbl'.</msg>
-<status status="PASS" starttime="20210121 16:55:31.152" endtime="20210121 16:55:41.486"></status>
+<msg timestamp="20210121 18:29:36.727" level="INFO">Clicking element 'class:login-lbl'.</msg>
+<status status="PASS" starttime="20210121 18:29:36.727" endtime="20210121 18:29:43.823"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:30.959" endtime="20210121 16:55:41.486"></status>
+<status status="PASS" starttime="20210121 18:29:36.538" endtime="20210121 18:29:43.823"></status>
 </kw>
 <kw name="เข้าใช้งาน FlowAccount สำเร็จ" library="TestCase_Login">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -64,18 +64,18 @@
 <arguments>
 <arg>class:panel-heading</arg>
 </arguments>
-<status status="PASS" starttime="20210121 16:55:41.487" endtime="20210121 16:55:42.441"></status>
+<status status="PASS" starttime="20210121 18:29:43.824" endtime="20210121 18:29:45.346"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>ภาพรวมบริษัท</arg>
 </arguments>
-<status status="PASS" starttime="20210121 16:55:42.441" endtime="20210121 16:55:42.465"></status>
+<status status="PASS" starttime="20210121 18:29:45.347" endtime="20210121 18:29:45.374"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:41.487" endtime="20210121 16:55:42.465"></status>
+<status status="PASS" starttime="20210121 18:29:43.824" endtime="20210121 18:29:45.374"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:21.755" endtime="20210121 16:55:42.466" critical="yes"></status>
+<status status="PASS" starttime="20210121 18:29:28.249" endtime="20210121 18:29:45.375" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Duplicate Quotations">
 <kw name="เข้าสู่หน้าใบเสนอราคา" library="TestCase_create_qt">
@@ -84,17 +84,17 @@
 <arguments>
 <arg>${menu_class_qt}</arg>
 </arguments>
-<msg timestamp="20210121 16:55:42.478" level="INFO">Clicking element 'class:fl-sell'.</msg>
-<status status="PASS" starttime="20210121 16:55:42.478" endtime="20210121 16:55:42.917"></status>
+<msg timestamp="20210121 18:29:45.385" level="INFO">Clicking element 'class:fl-sell'.</msg>
+<status status="PASS" starttime="20210121 18:29:45.384" endtime="20210121 18:29:45.978"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>${document_title_qt}</arg>
 </arguments>
-<status status="PASS" starttime="20210121 16:55:42.917" endtime="20210121 16:55:43.037"></status>
+<status status="PASS" starttime="20210121 18:29:45.978" endtime="20210121 18:29:46.171"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:42.478" endtime="20210121 16:55:43.038"></status>
+<status status="PASS" starttime="20210121 18:29:45.383" endtime="20210121 18:29:46.171"></status>
 </kw>
 <kw name="สร้างเอกสารซ้ำ" library="TestCase_duplicate_qt">
 <kw name="Get Element Count" library="Selenium2Library">
@@ -105,47 +105,79 @@
 <assign>
 <var>${count}</var>
 </assign>
-<msg timestamp="20210121 16:55:43.150" level="INFO">${count} = 2</msg>
-<status status="PASS" starttime="20210121 16:55:43.039" endtime="20210121 16:55:43.151"></status>
+<msg timestamp="20210121 18:29:46.248" level="INFO">${count} = 2</msg>
+<status status="PASS" starttime="20210121 18:29:46.173" endtime="20210121 18:29:46.248"></status>
 </kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Connt: ${count}</arg>
-</arguments>
-<msg timestamp="20210121 16:55:43.151" level="INFO">Connt: 2</msg>
-<status status="PASS" starttime="20210121 16:55:43.151" endtime="20210121 16:55:43.151"></status>
-</kw>
-<kw name="${index} IN [ 2 ]" type="for">
-<kw name="${index} = 2" type="foritem">
+<kw name="${i} IN RANGE [ 1 | ${count+1} ]" type="for">
+<kw name="${i} = 1" type="foritem">
 <kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
 <arguments>
-<arg>css:.datatable-row-wrapper:nth-child(${index}) .datatable-row-center .datatable-body-cell:nth-child(3)</arg>
+<arg>css:.datatable-row-wrapper:nth-child(${i}) ${row_serial}</arg>
 </arguments>
 <assign>
 <var>${get_value}</var>
 </assign>
-<msg timestamp="20210121 16:55:43.185" level="INFO">${get_value} = QT2021010001</msg>
-<status status="PASS" starttime="20210121 16:55:43.152" endtime="20210121 16:55:43.185"></status>
+<msg timestamp="20210121 18:29:46.284" level="INFO">${get_value} = QT2021010002</msg>
+<status status="PASS" starttime="20210121 18:29:46.249" endtime="20210121 18:29:46.284"></status>
 </kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
-<arg>${get_value}</arg>
+<arg>'${get_value}'=='QT2021010002'</arg>
+<arg>Click Element</arg>
+<arg>css:.datatable-row-wrapper:nth-child(${i}) ${more_menu}</arg>
 </arguments>
-<msg timestamp="20210121 16:55:43.186" level="INFO">QT2021010001</msg>
-<status status="PASS" starttime="20210121 16:55:43.185" endtime="20210121 16:55:43.186"></status>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:.datatable-row-wrapper:nth-child(${i}) ${more_menu}</arg>
+</arguments>
+<msg timestamp="20210121 18:29:46.286" level="INFO">Clicking element 'css:.datatable-row-wrapper:nth-child(1) .datatable-row-center .datatable-body-cell:nth-child(7) .btn-more'.</msg>
+<status status="PASS" starttime="20210121 18:29:46.285" endtime="20210121 18:29:46.765"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:43.152" endtime="20210121 16:55:43.186"></status>
+<status status="PASS" starttime="20210121 18:29:46.285" endtime="20210121 18:29:46.765"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:43.151" endtime="20210121 16:55:43.186"></status>
+<status status="PASS" starttime="20210121 18:29:46.249" endtime="20210121 18:29:46.765"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:43.038" endtime="20210121 16:55:43.186"></status>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:.datatable-row-wrapper:nth-child(${i}) ${row_serial}</arg>
+</arguments>
+<assign>
+<var>${get_value}</var>
+</assign>
+<msg timestamp="20210121 18:29:46.795" level="INFO">${get_value} = QT2021010001</msg>
+<status status="PASS" starttime="20210121 18:29:46.765" endtime="20210121 18:29:46.795"></status>
 </kw>
-<status status="PASS" starttime="20210121 16:55:42.476" endtime="20210121 16:55:43.187" critical="yes"></status>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${get_value}'=='QT2021010002'</arg>
+<arg>Click Element</arg>
+<arg>css:.datatable-row-wrapper:nth-child(${i}) ${more_menu}</arg>
+</arguments>
+<status status="PASS" starttime="20210121 18:29:46.796" endtime="20210121 18:29:46.796"></status>
+</kw>
+<status status="PASS" starttime="20210121 18:29:46.765" endtime="20210121 18:29:46.796"></status>
+</kw>
+<status status="PASS" starttime="20210121 18:29:46.248" endtime="20210121 18:29:46.796"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${more_menu_duplicate}</arg>
+</arguments>
+<msg timestamp="20210121 18:29:46.797" level="INFO">Clicking element '//*[text()[contains(.,'สร้างซ้ำ')]]'.</msg>
+<status status="PASS" starttime="20210121 18:29:46.796" endtime="20210121 18:29:46.878"></status>
+</kw>
+<status status="PASS" starttime="20210121 18:29:46.172" endtime="20210121 18:29:46.878"></status>
+</kw>
+<status status="PASS" starttime="20210121 18:29:45.382" endtime="20210121 18:29:46.878" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210121 16:55:21.615" endtime="20210121 16:55:43.197"></status>
+<status status="PASS" starttime="20210121 18:29:28.112" endtime="20210121 18:29:46.889"></status>
 </suite>
 <statistics>
 <total>

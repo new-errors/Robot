@@ -4,6 +4,9 @@ Library     Selenium2Library   implicit_wait=60  timeout=60
 *** Variables ***
 #Value
 
+${row_serial}                   .datatable-row-center .datatable-body-cell:nth-child(3)
+${more_menu}                    .datatable-row-center .datatable-body-cell:nth-child(7) .btn-more
+${more_menu_duplicate}          //*[text()[contains(.,'สร้างซ้ำ')]]
 
 #Element
 
@@ -11,17 +14,17 @@ Library     Selenium2Library   implicit_wait=60  timeout=60
 # Function
 สร้างเอกสารซ้ำ  
     ${count} =  Get Element Count   css:.datatable-row-wrapper .datatable-row-center 
-    Log         Connt: ${count}
 
-    FOR     ${index}    IN    2
-        # Log         Connt: ${count} and ${i}
-        ${get_value}    Get Text    css:.datatable-row-wrapper:nth-child(${index}) .datatable-row-center .datatable-body-cell:nth-child(3) 
-        Log         ${get_value} 
+    FOR  ${i}   IN RANGE  1   ${count+1}
 
-        # Run Keyword If  '${get_value}'=='QT2021010001'   Click Element  css:.datatable-row-wrapper:nth-child(${index} ) .datatable-row-center .datatable-body-cell:nth-child(3) 
+        ${get_value}    Get Text    css:.datatable-row-wrapper:nth-child(${i}) ${row_serial}    
+
+        Run Keyword If  '${get_value}'=='QT2021010002'   Click Element  css:.datatable-row-wrapper:nth-child(${i}) ${more_menu} 
+
     END
 
-    # GET       css:.datatable-row-wrapper:nth-child(1) .datatable-row-center .datatable-body-cell:nth-child(3)
-    # Click Element
+    Click Element           ${more_menu_duplicate}
+
+
 
 
