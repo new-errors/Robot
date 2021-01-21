@@ -5,7 +5,7 @@ Library     DateTime
 Library     String
 
 Resource    TestCase/TestCase_Login.robot
-Resource    TestCase/TestCase_create_doc.robot
+Resource    TestCase/TestCase_create_qt.robot
 
 *** Variables ***
 
@@ -23,7 +23,13 @@ Login FlowAccount.com
 Create Quotations
     เข้าสู่หน้าใบเสนอราคา
     สร้างใบเสนอราคา
+    เลือกรายชื่อผู้ติดต่อ
     เพิ่มรายการสินค้า
     เลือกรายการสินค้า
+    ตรวจสอบยอดรวมเอกสาร
+    บันทึกเอกสาร
+
+# Duplicate Quotations
+#     Log                 Serial ${document_serial}
     
 
